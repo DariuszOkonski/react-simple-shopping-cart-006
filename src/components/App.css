@@ -1,0 +1,73 @@
+.app {
+  border: 1px solid black;
+  margin: 20px auto;
+  padding: 20px 10px;
+  background-color: #ccc;
+  width: 95%;
+  height: 95vh;
+}
+
+h1 {
+  text-transform: uppercase;
+  padding: 10px 0px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  padding: 10px 0;
+  font-weight: 100;
+}
+
+h2 span {
+  font-weight: bold;
+}
+
+span.result {
+  display: inline-block;
+  min-width: 40px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 5px;
+  min-width: 50px;
+  cursor: pointer;
+  outline: none;
+}
+
+button.reset,
+button.buy {
+  display: block;
+  margin: 10px auto;
+  min-width: 150px;
+  transition: .2s;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+button:disabled {
+  background-color: grey;
+  border-color: gray;
+  color: white;
+}
+
+button:disabled:hover {
+  color: white;
+  background-color: gray;
+}
+
+@media(min-width: 800px) {
+  .app {
+    width: 50%;
+    max-width: 400px;
+    height: 40vh;
+  }
+}
